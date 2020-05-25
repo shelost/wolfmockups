@@ -1,0 +1,92 @@
+body {
+  font-family: Questrial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin: 3vw;
+}
+
+.header h1 {
+  font-size: 6vw;
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 3vw;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1vw;
+}
+
+.entry {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 15vw;
+  height: 5vw;
+  padding: 0.5vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  border-radius: 1vw;
+  margin: 0.5vw;
+  position: relative;
+}
+
+.entry .fill {
+  width: 0vw;
+  border-radius: 1vw 0 0 1vw;
+  height: 6vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: #00AEFF;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.entry span {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.entry h1 {
+  font-size: 2vw;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-align: center;
+}
+
+.entry:hover .fill {
+  width: 18vw;
+  border-radius: 1vw;
+}
+
+.entry:hover h1 {
+  color: white;
+}
+
+.entry:hover span {
+  color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=landing.css.map */

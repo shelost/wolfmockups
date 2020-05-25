@@ -1,0 +1,219 @@
+body {
+  font-family: Questrial, sans-serif;
+}
+
+* {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.title {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow-y: scroll;
+  height: 98vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 3vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bar div {
+  height: 100%;
+}
+
+.bar img {
+  height: 80%;
+  border-radius: 10vw;
+  padding: 0.5vw;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.bar img:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.vote {
+  height: 4vw;
+  margin: 1vw;
+  margin-bottom: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vote img {
+  height: 100%;
+  border-radius: 3vw;
+  margin: 1vw;
+  padding: 0.5vw;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.vote img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.vote .button {
+  height: 100%;
+  margin: 1vw;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.vote .button img {
+  height: 80%;
+  margin-right: -0.5vw;
+  margin-left: -0.5vw;
+}
+
+.expo {
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.expo h1 {
+  margin: 1vw;
+  font-size: 4vw;
+}
+
+.expo h2 {
+  font-size: 1.5vw;
+  margin: 1vw;
+}
+
+.bull {
+  background-color: #00CC3E;
+}
+
+.bull:hover {
+  background-color: #00b336;
+}
+
+.bear {
+  background-color: #DF0000;
+}
+
+.bear:hover {
+  background-color: #c60000;
+}
+
+.red {
+  background-color: #DF0000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.green {
+  background-color: #00CC3E;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.screen {
+  background-color: #000D56;
+  border-radius: 0.5vw;
+  width: 30vw;
+  height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen.black {
+  background-color: black;
+}
+
+.screen.black .bar {
+  height: 2vw;
+}
+
+.screen.black .vote img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.screen.kassabov .green {
+  background-color: white;
+}
+
+.screen.kassabov .red {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.screen.kassabov .button {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.screen.kassabov .button img {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+.screen.kassabov .button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=vote.css.map */
