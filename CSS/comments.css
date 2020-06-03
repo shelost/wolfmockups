@@ -54,6 +54,10 @@ input:focus {
   text-align: left;
 }
 
+.screen img {
+  width: 100%;
+}
+
 .screen .content {
   display: -webkit-box;
   display: -ms-flexbox;
